@@ -42,6 +42,7 @@ If you wish to try this bot in your discord server, send me a mail via mail@raul
 
 ### :mountain_bicyclist: Continued development
 
+Using the message event is not the best way of handling requests, which is why at some point this application should be refactored using [Discord Slash Commands](https://discordjs.guide/creating-your-bot/slash-commands.html) instead. But for the current functionality, this is more than enough.
 
 ### :cake: Useful resources
 

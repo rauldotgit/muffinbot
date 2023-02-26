@@ -1,7 +1,12 @@
 console.log("beep beep")
 
-const {Client, GatewayIntentBits} = require('discord.js')
-const {token} = require('./config.json')
+// const {Client, Events, GatewayIntentBits, Partials} = require('discord.js')
+// const {discord_token} = require('./config.json')
+// const cmdHandler = require("./cmdHandler")
+
+import {Client, Events, GatewayIntentBits} from 'discord.js'
+import {discord_token} from './config.js'
+import cmdHandler from './cmdHandler.js'
 
 const client = new Client({
     intents: [
@@ -12,18 +17,12 @@ const client = new Client({
 	],
 })
 
+// login to discord with the token
+client.login(discord_token)
 
+client.once(Events.ClientReady, readyDiscord)
 
-// will have to be hidden in an env file
-client.login(token)
-
-client.on('ready', readyDiscord)
-
-client.on('message', gotMessage)
-
-function gotMessage(msg){
-    console.log('')
-}
+client.on('messageCreate', cmdHandler)
 
 function readyDiscord(){
     console.log('Im ready!')
