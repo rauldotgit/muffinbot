@@ -11,7 +11,6 @@ export default function (props){
 
     const firstBracket = opt[0]
     const lastBracket = opt[opt.length-1]
-
     if(firstBracket !== '(' || lastBracket !== ')'){
         msg.reply('The input is missing brackets mate.')
         return
