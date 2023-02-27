@@ -3,14 +3,14 @@ import {tenor_key} from '../config.js'
 
 export default async function (props){
 
-    const {msg, opt1} = props
+    const {msg, opt} = props
     let search = 'cat'
     let title = 'Random miau miau'
     let random = true
 
-    if(opt1){
-        search = `${opt1} cat`
-        title = `${opt1} miau miau`
+    if(opt){
+        search = `${opt} cat`
+        title = `${opt} miau miau`
         random = false
     }
 

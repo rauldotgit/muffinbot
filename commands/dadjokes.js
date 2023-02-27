@@ -18,13 +18,15 @@ export default async function (props){
 
     if(!json.success || !json){
         msg.reply('All out of dad jokes for today ...')
+        return
     }
 
     const setup = json.body[0].setup
     const punchline = json.body[0].punchline
-    const joke = 
-        `${setup}.
-        ${punchline}.` 
+    const joke = `${setup}.
+    .
+    .
+    ${punchline}.` 
 
     msg.reply(joke)
 }
