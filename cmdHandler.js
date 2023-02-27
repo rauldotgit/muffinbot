@@ -2,25 +2,21 @@ import status from './commands/status.js'
 import wrongReply from './utils/wrongReply.js'
 import miau from './commands/miau.js'
 import dadjoke from './commands/dadjokes.js'
-import match from './commands/matchup.js'
+import matchup from './commands/matchup.js'
 
-const commands = { status, match, miau, dadjoke }
+const commands = { status, matchup, miau, dadjoke }
 
 export default function(msg){
 
     const content = msg.content
     const separated = content.split(' ')
     let [bot, cmd, ...options] = separated 
-
-    // we mostly need the options as a whole string
     let opt = options.join(' ')
-
     const params = {msg, opt}
   
     if(bot !== '!bot') return
 
     const useCommand = commands[cmd]
-
     if(!useCommand){
         let newReply = wrongReply()
         msg.reply(newReply)
