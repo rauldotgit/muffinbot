@@ -1,17 +1,8 @@
-// parse the commands and call them here
-// const { setPosition } = require('discord.js')
-// const status = require('./commands/status')
-// const wrongReply = require('./utils/wrongReply')
-// const miau = require('./commands/miau')
-// const msgParse = require('./utils/msgParse')
-
-// import { setPosition } from "discord.js"
 import status from './commands/status.js'
 import wrongReply from './utils/wrongReply.js'
 import miau from './commands/miau.js'
 import dadjoke from './commands/dadjokes.js'
 
-// Enhanced object literal object with all commands (aka. key == name)
 const commands = { status, miau, dadjoke }
 
 export default function(msg){
