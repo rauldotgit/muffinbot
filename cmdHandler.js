@@ -5,8 +5,9 @@ import dadjoke from './commands/dadjokes.js'
 import matchup from './commands/matchup.js'
 import help from './commands/help.js'
 import build from './commands/build.js'
+import counters from './commands/counters.js'
 
-const commands = { status, help, matchup, miau, dadjoke, build }
+const commands = { status, help, matchup, miau, dadjoke, build, counters }
 
 export default function(msg){
 
