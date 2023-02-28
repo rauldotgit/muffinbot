@@ -3,18 +3,22 @@ import wrongReply from './utils/wrongReply.js'
 import miau from './commands/miau.js'
 import dadjoke from './commands/dadjokes.js'
 import matchup from './commands/matchup.js'
+import help from './commands/help.js'
+import build from './commands/build.js'
 
-const commands = { status, matchup, miau, dadjoke }
+const commands = { status, help, matchup, miau, dadjoke, build }
 
 export default function(msg){
 
     const content = msg.content
-    const separated = content.split(' ')
-    let [bot, cmd, ...options] = separated 
-    let opt = options.join(' ')
+    let [bot, cmd, ...opt] = content.split(' ')
     const params = {msg, opt}
   
     if(bot !== '!bot') return
+    if(!cmd){
+        msg.reply('Please add a command like: !bot help, !bot miau ...')
+        return
+    }
 
     const useCommand = commands[cmd]
     if(!useCommand){
