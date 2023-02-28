@@ -10,11 +10,10 @@ export default function(props){
         return
     }
 
-    // opt is either a list or the string voice "voice",
+    // opt is either a list of players or the string voice "voice",
     // if its opt, use the user provided options as players
 
     if(opt[0] === 'voice'){
-  
         let members = null
 
         try{
@@ -32,7 +31,6 @@ export default function(props){
 
         members.forEach((member) => {
             const name = member.user.username.replaceAll(/([^a-zA-Z ]|\s)/g, '')
-    
             if(name !== 'MuffinBot')
                 players.push(name)          
         })
