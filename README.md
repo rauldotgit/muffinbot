@@ -15,6 +15,13 @@ Features include:
 - [Muffinbot - Discord Bot](#muffinbot---discord-bot)
   - [:book: Table of contents](#book-table-of-contents)
   - [Overview](#overview)
+    - [:cat: List of supported commands](#cat-list-of-supported-commands)
+      - [!bot help](#bot-help)
+      - [!bot matchup (options)](#bot-matchup-options)
+      - [!bot build (champName)](#bot-build-champname)
+      - [!bot counters (champName)](#bot-counters-champname)
+      - [!bot miau (searchWords)](#bot-miau-searchwords)
+      - [!bot dadjoke](#bot-dadjoke)
     - [:camera: Screenshot](#camera-screenshot)
   - [My process](#my-process)
     - [:wrench: Built with](#wrench-built-with)
@@ -27,7 +34,54 @@ Features include:
 
 ## Overview
 
+### :cat: List of supported commands
+
+  #### !bot help
+
+  Returns a list of all Muffin Bot commands.
+  
+  #### !bot matchup (options)
+
+  Returns two randomized teams from the current voice chat members using **voice** as options. Can also be called with an empty space separated list of people as options for specific names.
+
+  Examples:
+    - Voice: !bot matchup voice
+    - List: !bot matchup steve pete jan max ruben 
+
+  #### !bot build (champName)
+
+  Returns a build recommendation link from [op.gg](https://op.gg/champions/) with the specified champion name
+
+  Examples:
+    -  !bot build masteryi
+
+  #### !bot counters (champName)
+
+  Returns a counter recommendation link from [counterstats.net](https://counterstats.net) with the specified champion name
+
+  Examples:
+    -  !bot counters teemo
+
+  #### !bot miau (searchWords)
+
+  Returns a random or specified searchword cat gif from the [Tenor Api](https://tenor.com/gifapi).
+
+  Examples:
+    - !bot miau
+    - !bot miau very chonky
+
+  #### !bot dadjoke
+
+  Returns a random dad joke from the [Dadjokes Api](https://dadjokes.io/)
+
+
 ### :camera: Screenshot
+
+![Matchup Image](/public/screenshots/screenshot_matchup.png?raw=true "!bot matchup (options)")
+
+![Counters Image](/public/screenshots/screenshot_counters.png?raw=true "!bot counters aurelion")
+
+![Miau Image](/public/screenshots/screenshot_miau.png?raw=true "!bot miau chonk")
 
 <!-- ### :link: Links
 
