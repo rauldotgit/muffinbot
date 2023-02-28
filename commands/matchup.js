@@ -44,7 +44,7 @@ export default function(props){
         })
     }
 
-    if(!players){
+    if(players.length < 1){
         msg.reply('Didn\'t get any players :( Use !bot help to check how to use commands.')
         return
     }
