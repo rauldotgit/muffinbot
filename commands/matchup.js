@@ -5,8 +5,8 @@ export default function(props){
     const {msg, opt} = props
     let players = []
 
-    if(!opt){
-        msg.reply('Forgot an option after matchup. Either !bot matchup voice, or !bot matchup name1 name2 name3 ...')
+    if(opt.length < 1){
+        msg.reply('Forgot options after matchup. Either !bot matchup voice, or !bot matchup name1 name2 name3 ...')
         return
     }
 
