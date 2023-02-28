@@ -17,6 +17,10 @@ export default function(props){
             Quick link to op.gg champion build page.
             *Example: !bot build nunu*
 
+    :book: **!bot counters champName**
+            Quick link to counterstats.net champion build page.
+            *Example: !bot counters nunu*
+
     :cat: **!bot miau**
             Get a random miau miau.
     
