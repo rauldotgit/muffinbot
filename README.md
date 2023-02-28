@@ -17,7 +17,7 @@ Features include:
   - [Overview](#overview)
     - [:cat: List of supported commands](#cat-list-of-supported-commands)
       - [!bot help](#bot-help)
-      - [!bot matchup (options)](#bot-matchup-options)
+      - [!bot matchup (playerNames)](#bot-matchup-playernames)
       - [!bot build (champName)](#bot-build-champname)
       - [!bot counters (champName)](#bot-counters-champname)
       - [!bot miau (searchWords)](#bot-miau-searchwords)
@@ -40,7 +40,7 @@ Features include:
 
   Returns a list of all Muffin Bot commands.
   
-  #### !bot matchup (options)
+  #### !bot matchup (playerNames)
 
   Returns two randomized teams from the current voice chat members using **voice** as options. Can also be called with an empty space separated list of people as options for specific names.
 
@@ -77,10 +77,13 @@ Features include:
 
 ### :camera: Screenshot
 
+**!bot matchup (options)**
 ![Matchup Image](/public/screenshots/screenshot_matchup.png?raw=true "!bot matchup (options)")
 
+**!bot counters aurelion**
 ![Counters Image](/public/screenshots/screenshot_counters.png?raw=true "!bot counters aurelion")
 
+**!bot miau chonk**
 ![Miau Image](/public/screenshots/screenshot_miau.png?raw=true "!bot miau chonk")
 
 <!-- ### :link: Links
@@ -103,7 +106,7 @@ This project is still in development. I've learned a bunch :D
 
 ### :mountain_bicyclist: Continued development
 
-The bot is currently in development, so it's not currently online, but will be soon using Vultr VPS.
+The bot is still in development, so it's not currently online, but will be soon using Vultr VPS.
 
 Development wise, the discord.js message event is not the best way of handling requests, which is why at some point this application should be refactored using [Discord Slash Commands](https://discordjs.guide/creating-your-bot/slash-commands.html) instead.
 
