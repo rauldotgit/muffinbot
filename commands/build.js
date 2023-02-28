@@ -1,16 +1,19 @@
-export default function(props){
-    const {msg, opt} = props
-    const champName = opt[0]
+import buildExceptions from '../Data/buildExceptions.js'
 
-    if(opt.length > 1) {
-        msg.reply('Too many arguments. Just type: !bot build nunu without brackets.')
-        return
-    } else if (opt.length < 1) {
-        msg.reply('Please provide a champ name. Like: !bot build azir')
+export default function(props){
+    let {msg, opt} = props
+
+    if(opt.length < 1){
+        msg.reply('Gimme a champion name!')
         return
     }
 
-    let url = `https://www.op.gg/champions/${champName}`
-    msg.reply(`**${champName} build on op.gg**
+    let charName = opt[0] ? opt[0] : ''
+    charName = opt[1] ? charName + opt[1] : charName
+    
+    if(charName in buildExceptions) charName = buildExceptions[charName]
+
+    let url = `https://www.op.gg/champions/${charName}`
+    msg.reply(`**${charName} build on op.gg**
     ${url}`)
 }
