@@ -2,7 +2,7 @@
 
 This is a discord bot for a personal league of legends discord channel with friends.
 
-Muffinbot is currenlty live on Vultr. If you wish to add Muffinbot to your discord server, you can use [this link.](https://discord.com/api/oauth2/authorize?client_id=1079226740326547496&permissions=8&scope=bot)
+Muffinbot is currenlty live on [Vultr](https://www.vultr.com/). If you wish to add Muffinbot to your discord server, you can use [this link.](https://discord.com/api/oauth2/authorize?client_id=1079226740326547496&permissions=8&scope=bot)
 
 _Note: The link is used to add Muffinbot with admin permissions, yet Muffinbot will only send messages/ links in chat and read current voice channel members._
 
