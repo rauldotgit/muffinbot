@@ -11,15 +11,20 @@ export default async function (props){
             'X-RapidAPI-Host': dad_host
         }
     }
-
-    let url = 'https://dad-jokes.p.rapidapi.com/random/joke'
-    let response = await fetch(url, options)
-    let json = await response.json()
-
-    if(!json.success || !json){
-        msg.reply('All out of dad jokes for today ...')
+    try {
+        const url = 'https://dad-jokes.p.rapidapi.com/random/joke'
+        const response = await fetch(url, options)
+        var json = await response.json()
+    } catch (err) {
+        console.log(err)
+        msg.channel.send('All out of dad jokes for today ...')
         return
     }
+
+    // if(!json.success || !json){
+    //     msg.channel.send('All out of dad jokes for today ...')
+    //     return
+    // }
 
     const setup = json.body[0].setup
     const punchline = json.body[0].punchline
@@ -28,5 +33,5 @@ export default async function (props){
     .
     ${punchline}.` 
 
-    msg.reply(joke)
+    msg.channel.send(joke)
 }

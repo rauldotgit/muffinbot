@@ -6,7 +6,7 @@ export default function(props){
     let players = []
 
     if(opt.length < 1){
-        msg.reply('Forgot options after matchup. Either !bot matchup voice, or !bot matchup name1 name2 name3 ...')
+        msg.channel.send('Forgot options after matchup. Either !bot matchup voice, or !bot matchup name1 name2 name3 ...')
         return
     }
 
@@ -19,13 +19,7 @@ export default function(props){
         try{
             members =  msg.member.voice.channel.members
         } catch (err) {
-            msg.reply('You\'re not currently in a voice chat.')
-            return
-        }
-
-        // rendundant but ... maybe necessary?
-        if(!members){
-            msg.reply('No voice channel members found.')
+            msg.channel.send('You\'re not currently in a voice chat.')
             return
         }
 
@@ -43,7 +37,7 @@ export default function(props){
     }
 
     if(players.length < 1){
-        msg.reply('Didn\'t get any players :( Use !bot help to check how to use commands.')
+        msg.channel.send('Didn\'t get any players :( Use !bot help to check how to use commands.')
         return
     }
 

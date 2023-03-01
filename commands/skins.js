@@ -21,5 +21,5 @@ export default async function(props){
     }
 
     const url = `https://youtube.com/watch?v=${videoId}`
-    msg.reply(url)
+    msg.channel.send(url)
 }

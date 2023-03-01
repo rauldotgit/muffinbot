@@ -24,6 +24,6 @@ export default async function (props){
     }
     
     let reply = json.results[0].url
-    msg.reply(`${title} - Via Tenor.
+    msg.channel.send(`${title} - Via Tenor.
     ${reply}`)
 }

@@ -1,4 +1,4 @@
 export default function(params){
     const {msg} = params
-    msg.reply(':rocket: Up and ready to go!')
+    msg.channel.send(':rocket: Up and ready to go!')
 }

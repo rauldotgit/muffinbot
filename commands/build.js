@@ -14,6 +14,6 @@ export default function(props){
     if(charName in buildExceptions) charName = buildExceptions[charName]
 
     let url = `https://www.op.gg/champions/${charName}`
-    msg.reply(`**${charName} build on op.gg**
+    msg.channel.send(`**${charName} build on op.gg**
     ${url}`)
 }

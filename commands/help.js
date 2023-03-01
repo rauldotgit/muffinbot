@@ -1,6 +1,6 @@
 export default function(props){
     const {msg} = props
-    msg.reply(`**Welcome to Muffin Bot :cupcake:**
+    msg.channel.send(`**Welcome to Muffin Bot :cupcake:**
     
     Here's a list of all current commands:
 
