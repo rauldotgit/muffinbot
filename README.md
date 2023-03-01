@@ -20,6 +20,7 @@ Features include:
       - [!bot matchup (playerNames)](#bot-matchup-playernames)
       - [!bot build (champName)](#bot-build-champname)
       - [!bot counters (champName)](#bot-counters-champname)
+      - [!bot skins (champName)](#bot-skins-champname)
       - [!bot miau (searchWords)](#bot-miau-searchwords)
       - [!bot dadjoke](#bot-dadjoke)
     - [:camera: Screenshot](#camera-screenshot)
@@ -61,6 +62,14 @@ Features include:
 
   Examples:
     -  !bot counters teemo
+
+
+  #### !bot skins (champName)
+
+  Returns an "all skins spotlight" video from Youtube.
+
+  Examples:
+    - !bot skins khazix
 
   #### !bot miau (searchWords)
 
