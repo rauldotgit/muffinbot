@@ -4,7 +4,7 @@ export default function(props){
     
     Here's a list of all current commands:
 
-    :crossed_swords: **!bot matchup voice**
+    :crossed_swords: **!bot matchup voice (broken)**        
             Create two randomized teams from people in you're current voice chat.
             *Note: Might include recently disconnected peopl (slow discord cache).*
             *Use command below to be precise.*
@@ -20,6 +20,10 @@ export default function(props){
     :book: **!bot counters champName**
             Quick link to counterstats.net champion build page.
             *Example: !bot counters nunu*
+
+    :crown: **!bot skins champName**
+            Quick link to an "all skins spotlight" video on Youtube.
+            *Example: !bot skins khazix*
 
     :cat: **!bot miau**
             Get a random miau miau.
