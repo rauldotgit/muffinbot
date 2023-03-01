@@ -10,6 +10,7 @@ Features include:
   - Create randomized teams from discord voice channel or provided list 
   - Get link to [op.gg](https://op.gg/champions) for champion specific builds
   - Get link to [counterstats.net](https://counterstats.net/) for champion specific counters
+  - Get link to an "all skins spotlight" video on [YouTube](https://youtube.com/) for a specified champion
   - Get random cat related gif with/without search words from [Tenor API](https://tenor.com/gifapi)
   - Get a random dad joke from [DadJokes API](https://dadjokes.io/)
 
@@ -112,6 +113,7 @@ Features include:
 - [Tenor](https://tenor.com/gifapi) - Gif API 
 - [DadJokes.io](https://dadjokes.io/) - DadJokes API
 - [Vultr](https://vultr.com/) - VPS Host 
+- [YouTube Data API v3](https://developers.google.com/youtube/v3) - YouTube API
 
 ### :bulb: What I learned
 
