@@ -1,6 +1,10 @@
-# Muffinbot - Discord Bot
+# Muffinbot - Discord Bot (Live :white_check_mark:)
 
 This is a discord bot for a personal league of legends discord channel with friends.
+
+Muffinbot is currenlty live on Vultr. If you wish to add Muffinbot to your discord server, you can use [this link.](https://discord.com/api/oauth2/authorize?client_id=1079226740326547496&permissions=8&scope=bot)
+
+_Note: The link is used to add Muffinbot with admin permissions, yet Muffinbot will only send messages/ links in chat and read current voice channel members._
 
 Features include:
   - Create randomized teams from discord voice channel or provided list 
@@ -12,7 +16,7 @@ Features include:
   
 ## :book: Table of contents
 
-- [Muffinbot - Discord Bot](#muffinbot---discord-bot)
+- [Muffinbot - Discord Bot (Live :white\_check\_mark:)](#muffinbot---discord-bot-live-white_check_mark)
   - [:book: Table of contents](#book-table-of-contents)
   - [Overview](#overview)
     - [:cat: List of supported commands](#cat-list-of-supported-commands)
@@ -111,11 +115,9 @@ Features include:
 
 ### :bulb: What I learned
 
-This project is still in development. I've learned a bunch :D 
+Soon.
 
 ### :mountain_bicyclist: Continued development
-
-The bot is still in development, so it's not currently online, but will be soon using Vultr VPS.
 
 Development wise, the discord.js message event is not the best way of handling requests, which is why at some point this application should be refactored using [Discord Slash Commands](https://discordjs.guide/creating-your-bot/slash-commands.html) instead.
 
